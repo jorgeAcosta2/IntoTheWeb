@@ -1,0 +1,116 @@
+/*** Media Queries ***/
+/* Experimenting with media queries, not final */
+@media only screen and (min-width: 1830px) and (orientation: landscape){
+    
+/* Align images somewhat */
+#images-section li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 3%;
+}
+    body{
+        background-color: darkgrey;
+    }
+    
+}
+
+@media only screen and (max-width: 1700px){
+    body{
+        background-color: darkseagreen;
+    }
+    
+    #images-section li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15%;
+    padding-bottom: 5%;
+    margin-right: -6%;
+    }
+}
+
+@media only screen and (max-width: 1830px) and (min-width: 1385px){
+    body{
+        background-color: skyblue;
+    }
+ 
+    #images-section li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15%;
+
+    }   
+    
+}
+    
+/*** End of Media Queries ***/
+
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+html{
+    box-sizing: border-box;
+}
+
+#main-h1{
+    text-align: center;
+}
+
+#main-header{
+    background-color: #c20a0a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#main-nav{
+    text-align: center;
+
+}
+
+#main-nav li{
+    display: inline-block;
+    margin-left: 85px;
+    margin-right: 85px;
+    list-style-type: none;
+    font-size: 19px;
+    padding: 30px;
+}
+
+#main-nav li a{
+    text-decoration: none;
+}
+
+/* lightbox for images */
+#overlay{
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+}
+
+#overlay img{
+    margin-top: 5.5%;
+}
+
+#overlay p{
+   color:aliceblue; 
+}
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
