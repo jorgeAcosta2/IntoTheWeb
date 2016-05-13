@@ -102,7 +102,20 @@ html{
    color:aliceblue; 
 }
 
+/*** Styles for  Drop down menu ***/
 
+@media (min-width: 320px) and (max-width: 568px) {
+
+    #main-nav ul {
+        display: none;
+    }
+}
+
+@media (min-width: 568px){
+    #main-nav select, #main-nav button{
+        display: none;
+    }
+}
 
     
     

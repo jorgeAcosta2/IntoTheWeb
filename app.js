@@ -38,3 +38,40 @@ $overlay.click(function(){
 /***** End of Lightbox ******/
 
 
+
+
+/*** start of drop down menu ***/
+
+var $select = $("<select></select>");
+
+$("#main-nav").append($select);
+
+$("#main-nav a").each(function(){
+    var $anchor = $(this);
+    var $option = $("<option></option>");
+
+    $option.val($anchor.attr("href"));
+    $option.text($anchor.text());
+    $select.append($option);
+
+    //Change selected option depending on current page
+if($anchor.parent().hasClass("selected")) {
+    $option.prop("selected", true);
+}
+    
+});
+
+//Triggers event on mouse click
+$select.change(function(){
+    //Go to select locaion
+    window.location = $select.val(); 
+});
+
+
+
+
+
+
+
+
+
