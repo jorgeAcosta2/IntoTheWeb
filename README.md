@@ -14,3 +14,7 @@ First website. Building the website using Team Treehouse course's and the web.
  - added mobile drop down menu 
  - added 3 new pages, "About", "Contact", and "Canvas"
  - Changed title on Home page from "Website One to Into The Web Project"
+ 
+* 13-May-2016
+ - Updated Canvas Page with a Canvas
+ - Following this [HTML5 Canvas Drawing App] (https://www.youtube.com/watch?v=m4sioSqlXhQ) tutorial, to create Canvas from scratch
