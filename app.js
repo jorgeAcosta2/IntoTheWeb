@@ -68,8 +68,43 @@ $select.change(function(){
 });
 
 
+/***** Start of Canvas Page *****/
 
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext('2d');
 
+var radius = 10;
+
+//create mouse dragging for canvas
+var mouseDrag = false;
+
+ctx.lineWidth = radius * 2;
+
+var putPoint = function(event){
+    if(mouseDrag){
+        ctx.lineTo(event.offsetX,event.offsetY);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(event.offsetX,event.offsetY,radius,0,Math.PI * 2);
+        ctx.fill();  
+        ctx.beginPath();
+        ctx.moveTo(event.offsetX,event.offsetY);
+    }
+}
+
+var engage = function(event){
+    mouseDrag = true;
+    putPoint(event);
+}
+
+var disengage = function(){
+    mouseDrag = false;
+    ctx.beginPath();
+}
+
+canvas.addEventListener('mousedown', engage);
+canvas.addEventListener('mousemove', putPoint);
+canvas.addEventListener('mouseup', disengage);
 
 
 
