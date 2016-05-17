@@ -165,11 +165,7 @@ canvas {
     width: 20%;
     margin-left: 45%;
 }
-
-#toolbar{
-    
-}
-    
+ @media only screen and (min-width: 1830px) and (orientation: landscape){   
 .radcontrol{ 
     box-sizing: border-box;
     width: 2.5%;
@@ -182,8 +178,44 @@ canvas {
     bottom: 19px;
     left: 170px;
 }
-    
 
+.swatch{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow:  inset 0px 1px 0px rgba(255,255,255,0.5), 0px 2px 2px rgba(0,0,0,0.5);
+    background-color: aqua;
+    display: inline-block;
+    position: relative;
+    bottom:44px;
+    right:196%;
+    
+}
+
+#colors{
+    float: right;
+}
+
+.swatch.active{
+    border: 2px solid white;
+    box-shadow: inset 0px 1px 2px(0,0,0,0.5);
+    
+}
+ 
+#savelink{
+    text-align: center;
+    margin-left: 32%;
+    color: blanchedalmond;
+    font-size: 18px;
+    text-decoration: none;
+}   
+
+#savelink:hover{
+    color: gold;
+}     
+    
+     
+}/*Ending Brace For Media Query*/
 
 
 
