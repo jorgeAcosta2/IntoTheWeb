@@ -1,8 +1,9 @@
 # IntoTheWeb
 First website. Building the website using Team Treehouse course's and the web.
 
-## big issues
+## issues
 * Need to make website responsive
+* Header pop up makes header increase margin
 
 ## changelog
 * 10-May-2016 
@@ -24,6 +25,9 @@ First website. Building the website using Team Treehouse course's and the web.
  
 * 19-May-2016
  - Added animsition jquery plugin
- 
+
+* 20-May-2016
+ - Added simple popup on header
+
  
  
