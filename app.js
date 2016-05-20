@@ -15,6 +15,22 @@ $("#main-header").hide().show("slow");
 
 /***** End of animsition *****/
 
+/***** main header popup *****/
+$(document).ready(function(){
+    setTimeout(function(){
+    $('#main-header-popup').fadeIn(800);
+    }, 1500);
+}
+);
+
+$('#main-header-popup button').click(function(){
+    $(this).parent().fadeOut(800,function(){
+    })
+});
+
+/***** end of main header popup *****/
+
+
 /***** Start of lightbox *****/
 
 //Creating overlay

@@ -64,6 +64,31 @@ html{
     padding-bottom: 30px;
 }
 
+#main-header-popup{
+    font-size: 18px;
+    background: white;
+    opacity: .8;
+    margin-left: 1%;
+    margin-right: 68%;
+    border-radius: 10px;
+    border-style: none;
+    color: black;
+    border-color:black;
+    border-style: solid;
+    display: none;
+}
+
+#main-header-popup-button{
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: green; 
+}
+
+#main-header-pop-button span{
+    color:green;
+}
+
 #main-nav{
     text-align: center;
 
