@@ -76,9 +76,17 @@ html{
     list-style-type: none;
     font-size: 19px;
     padding: 30px;
+    color:antiquewhite;
+    text-decoration: none;
 }
 
 #main-nav li a{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+#main-nav li a:hover{
+    color: firebrick;
     text-decoration: none;
 }
 
