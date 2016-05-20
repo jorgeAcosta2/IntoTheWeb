@@ -4,18 +4,20 @@
         <meta charset="utf-8" />
         <title>Into the Web Project</title>
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link href="animsition/animsition.min.css" rel="stylesheet" type="text/css" />
         <link href="styles.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
+        <div class="animsition">
         <header id="main-header">
             <h1 id="main-h1">Canvas</h1>
         </header>
         <nav id="main-nav" class="main-nav-canvas">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li class="selected"><a href="canvas.html">Canvas</a></li>
+                <li><a href="index.html" class="animsition-link">Home</a></li>
+                <li><a href="about.html" class="animsition-link">About</a></li>
+                <li><a href="contact.html" class="animsition-link">Contact</a></li>
+                <li class="selected"><a href="canvas.html" class="animsition-link">Canvas</a></li>
             </ul>        
         </nav>
         <div id="toolbar">
@@ -31,13 +33,14 @@
             </div>
         </div>
         <canvas id="canvas" width="720" height="480">You don't have HTML5. Sorry.</canvas>
-        
+        </div>
         
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="animsition/animsition.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
         <script src="app.js"></script>
-        <script src="radius.js"></script>
-        <script src="colors.js"></script>
-        <script src="save.js"></script>
+        <script src="canvas/radius.js"></script>
+        <script src="canvas/colors.js"></script>
+        <script src="canvas/save.js"></script>
     </body>
 </html>

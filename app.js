@@ -2,7 +2,18 @@
 /*global $, jQuery*/
 
 //JQuery testing
-$("#main-header").show("slow").hide("slow").show("slow");
+$("#main-header").hide().show("slow");
+
+/***** beginning of animsition *****/
+
+  $(".animsition").animsition({
+    inDuration: 1500,
+    outDuration: 600,
+    /*inClass: 'fade-in-right-lg',
+    outClass: 'fade-out-right-lg'*/
+  });
+
+/***** End of animsition *****/
 
 /***** Start of lightbox *****/
 
@@ -107,6 +118,19 @@ canvas.addEventListener('mousemove', putPoint);
 canvas.addEventListener('mouseup', disengage);
 
 /***** End Canvas *****/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
