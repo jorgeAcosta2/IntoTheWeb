@@ -3,7 +3,8 @@ First website. Building the website using Team Treehouse course's and the web.
 
 ## issues
 * Need to make website responsive
-* Header pop up makes header increase margin
+* ~~Header pop up makes header increase margin~~ Fixed 20-May-2016
+ 
 
 ## changelog
 * 10-May-2016 
@@ -28,6 +29,7 @@ First website. Building the website using Team Treehouse course's and the web.
 
 * 20-May-2016
  - Added simple popup on header
-
+ - Fixed Popup issue
+ - Organized css a bit
  
  

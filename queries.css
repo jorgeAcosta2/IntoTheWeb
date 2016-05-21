@@ -1,0 +1,62 @@
+/*** Media Queries ***/
+/* Experimenting with media queries, not final */
+
+@media only screen and (min-width: 1830px) and (orientation: landscape){
+    
+/* Align images somewhat */
+#images-section li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 3%;
+}
+    body{
+        background-color: darkgrey;
+    }
+    
+    #main-header{
+    background-color: #c20a0a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    }   
+    
+    #main-header-popup{
+        color: black;
+        position: fixed;
+        margin-top: 15px;
+        margin-left: 5px;
+        opacity: .8;
+    }
+    
+}
+
+@media only screen and (max-width: 1700px){
+    body{
+        background-color: darkseagreen;
+    }
+    
+    #images-section li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15%;
+    padding-bottom: 5%;
+    margin-right: -6%;
+    }
+}
+
+@media only screen and (max-width: 1830px) and (min-width: 1385px){
+    body{
+        background-color: skyblue;
+    }
+ 
+    #images-section li{
+    display: inline-block;
+    text-align: center;
+    margin-left: 15%;
+
+    }   
+    
+}
+    
+/*** End of Media Queries ***/
+
