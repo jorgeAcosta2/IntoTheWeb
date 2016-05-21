@@ -4,7 +4,7 @@
 //JQuery testing
 $("#main-header").hide().show("slow");
 
-/***** beginning of animsition *****/
+/***** Beginning of animsition plugin *****/
 
   $(".animsition").animsition({
     inDuration: 1500,
@@ -19,7 +19,7 @@ $("#main-header").hide().show("slow");
 $(document).ready(function(){
     setTimeout(function(){
     $('#main-header-popup').fadeIn(800);
-    }, 1500);
+    }, 1500).parent().preventDefault();
 }
 );
 
@@ -51,7 +51,7 @@ $(".slides a").click(function(event){
     var imagehref = $(this).attr("href"); 
     console.log(imagehref); //verify click event in console
     $image.attr("src", imagehref); //Add href to src attr on $image
-    $overlay.show();
+    $overlay.fadeIn(500);
     
     var captionText = $(this).children("img").attr("alt");
     $caption.text(captionText);
@@ -59,13 +59,10 @@ $(".slides a").click(function(event){
 
 //Hide overlay when clicked
 $overlay.click(function(){
-    $overlay.hide();
+    $overlay.fadeOut(500);
 });
 
 /***** End of Lightbox ******/
-
-
-
 
 /*** start of drop down menu ***/
 

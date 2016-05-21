@@ -1,49 +1,3 @@
-/*** Media Queries ***/
-/* Experimenting with media queries, not final */
-@media only screen and (min-width: 1830px) and (orientation: landscape){
-    
-/* Align images somewhat */
-#images-section li{
-    display: inline-block;
-    text-align: center;
-    margin-left: 3%;
-}
-    body{
-        background-color: darkgrey;
-    }
-    
-}
-
-@media only screen and (max-width: 1700px){
-    body{
-        background-color: darkseagreen;
-    }
-    
-    #images-section li{
-    display: inline-block;
-    text-align: center;
-    margin-left: 15%;
-    padding-bottom: 5%;
-    margin-right: -6%;
-    }
-}
-
-@media only screen and (max-width: 1830px) and (min-width: 1385px){
-    body{
-        background-color: skyblue;
-    }
- 
-    #images-section li{
-    display: inline-block;
-    text-align: center;
-    margin-left: 15%;
-
-    }   
-    
-}
-    
-/*** End of Media Queries ***/
-
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -82,11 +36,13 @@ html{
     box-sizing: border-box;
     border-radius: 10px;
     border-style: solid;
-    border-color: green; 
+    border-color: green;
+    background: rgba(255,255,255,0.8);
 }
 
-#main-header-pop-button span{
-    color:green;
+#main-header-popup-button span{
+    color:red;
+    font-weight: bolder;
 }
 
 #main-nav{
@@ -198,7 +154,13 @@ canvas {
     width: 20%;
     margin-left: 45%;
 }
- @media only screen and (min-width: 1830px) and (orientation: landscape){   
+/***** End of Canvas Page *****/
+
+
+
+/*** Media Queries ***/
+/* Experimenting with media queries, not final */
+
 .radcontrol{ 
     box-sizing: border-box;
     width: 2.5%;
@@ -247,9 +209,6 @@ canvas {
     color: gold;
 }     
     
-     
-}/*Ending Brace For Media Query*/
-
 
 
 
